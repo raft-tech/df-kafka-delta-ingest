@@ -1,4 +1,5 @@
-FROM rust:1.67 AS builder
+FROM rust:1.69 AS builder
+ARG CARGO_REGISTRIES_CRATES_IO_PROTOCOL=sparse
 
 WORKDIR /build
 
