@@ -1,4 +1,4 @@
-name: docker
+name: dev 
 
 on:
   push:
@@ -14,8 +14,8 @@ env:
   TAG: dev
 
 jobs:
-  docker:
-    runs-on: ubuntu-latest
+  dev:
+    runs-on: self-hosted
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
